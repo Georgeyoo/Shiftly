@@ -8,13 +8,20 @@ Deployed: http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/
 
 ## Technologies Used
 
-- Apache Tomcat 8.5.60
-- UIKit
-- Jackson Core (Object Mapper)
-- Hibernate 4.3.11.Final
-- Java Servlet API 3.1.0
-- Log4j API 2.13.0
+- Java
+- Spring Framework
+- Spring ORM
+- Spring MVC
+- Hibernate
+- AWS RDS
 - PostgreSQL 42.2.18
+- Jenkins
+- AWS EC2
+- Angular 2+
+- TypeScript
+- HTML/CSS
+- Log4J
+- DevOps
 - JUnit
 - Mockito 1.8.4
 
@@ -22,27 +29,40 @@ Deployed: http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/
 ## Features
 
 List of features ready and TODOs for future development
-- After registering or logging in, users can submit tickets specifying an amount, category, and department.
-- Financial Managers can approve/deny a reimbursement request. To avoid fraudulant behavior Financial Managers are unable to approve/deny their own reimburstment requests. 
+- After logging in, users can view their weekly schedule and daily shifts. Additionally, users are able to view a bulletin board with messages from managers, send and receive private messages, as well as update their personal information and daily availability.
+- After logging in, managers can view their weekly schedule and daily shifts as well as set the daily shifts of users. Additionally, managers are be able to view a bulletin board with messages from other managers and post messages to all other users. Finally, managers can also send and receive private messages as well as update their personal information and daily availability. 
 
 To-do list:
-* Complete implementation of receipt (PDF/jpg/png) upload.
-* Addition of email confirmation upon new user registration.
+* Password Encryption
+* Forgot Password functionality
+* Drop and Trade Shift
+* View recent important messages and message notifications
+* Specific teams
 
-## Getting Started
-   
-In order to see this project in action, you will need a few things:
+## Installation
 
-1) Be sure to have Apache Tomcat 8.5.60 installed.
-2) Be sure to have the Java 8 runtime environment installed.
+Frontend
+contained within the p2-client directory with the Angular project files contained within p2-client/project2
+Ensure you are opening project folders within the p2-client/project2 folder or you will encounter an error when trying to build or serve
+Components should be created within the components folder
+Please use bootstrap classes for styling. see linked documentation under Technologies
+If new classes must be created, comment what they are for.
+You may need to run npm install if this is your first pull. Otherwise Angular will not know where to look for some of the inputs
 
-If both of the pre-requisites above are met, go ahead and clone this repo by using the below command:
+Backend
+contained within the p2-server directory
+All project files are contained within the com.ex package
 
-        git clone https://github.com/Georgeyoo/ExpenseReimburstment.git
+persistence: any persistence objects/daos go here
+web: any controllers.
+models: any models/POJOS
+search-engine: Any files related to the search engine.
 
-Once cloned, copy the .war file located within the /target directory and paste it into your tomcat webapps folder.
+Note: You will need to populate the paths to the different text files in the .java file
 
-Once the .war is run, by default you will be able to view the application at http://localhost:8080/p1/api/landing
+
+utilities: any utility classes
+config: configuration for any beans
 
 ## Usage
 
