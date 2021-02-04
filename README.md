@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A Web Application built using Java Servelets, Apache Tomcat, and UIKit which allows for the handling of expense reimbursements.
+A Web Application built using Angular and Java/Spring that abstracts away the pain of manual scheduling!
 
 Deployed: http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/
 
@@ -57,34 +57,25 @@ If/when you deploy the back-end, ensure that the front-end API calls (found with
 
 Welcome to Shiftly!
 
-![home](https://i.ibb.co/mywKjHh/exspensly.png)
-
-To start, register a new user either at the bottom of the landing page (Call to Action) or by clicking "Login" then "Create a new account".
-
-![SetAvailability](https://i.ibb.co/HFfsqss/availability.png)
-
-After registering we can proceed to logging in.
+Upon logging in, you'll be presented with a bulletin board that features all messages by managers.
 
 ![Bulletin](https://i.ibb.co/vY7cpTC/bulletin-board.png)
 
-Upon logging in, users will be able to see historical reimburstment requests, sort requests, and/or create a new request.
-
-![Daily](https://i.ibb.co/JvPjKn2/daily-schedule.png)
-
-Now that a ticket has been submitted, a Financial Manager will need to either approve/reject it. In the mean time, you'll notice that the reimburstment request now shows at the bottom. If reimburstment request history becomes too hectic, the you can always sort reimburstments to quickly find requests.
+Users can also send private messages to other users.
 
 ![DMs](https://i.ibb.co/1sdF4ZY/DMs.png)
 
-You can log in as a financial manager by using the following credentials:
-Email: m@m.com
-Password: test123
-
-Upon logging in as a manager, the view will look similar to normal users with the exception of a few buttons.
-Managers, just like normal users, can create new requests, see historical requests, and sort through historical requests.
-
-However, managers can also approve/reject pending requests and search for all requests by a specific user by their email.
+By heading to "Schedules", you'll be able to see the weekly schedule for yourself and your team.
 
 ![Weekly](https://i.ibb.co/JctBSJS/week-schedule.png)
+
+Additionally, by clicking into a specific day, you'll be able to see the daily view of the schedule.
+
+![Daily](https://i.ibb.co/JvPjKn2/daily-schedule.png)
+
+Finally, you can click on the profile icon at the top right to update your personal information and your daily availability.
+
+![SetAvailability](https://i.ibb.co/HFfsqss/availability.png)
 
 ## License
 
