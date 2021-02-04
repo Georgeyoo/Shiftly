@@ -41,50 +41,39 @@ To-do list:
 
 ## Installation
 
-Frontend
-contained within the p2-client directory with the Angular project files contained within p2-client/project2
-Ensure you are opening project folders within the p2-client/project2 folder or you will encounter an error when trying to build or serve
-Components should be created within the components folder
-Please use bootstrap classes for styling. see linked documentation under Technologies
-If new classes must be created, comment what they are for.
-You may need to run npm install if this is your first pull. Otherwise Angular will not know where to look for some of the inputs
+Start by cloning the entire repository to your local machine. 
 
-Backend
-contained within the p2-server directory
-All project files are contained within the com.ex package
+Frontend Installation:
 
-persistence: any persistence objects/daos go here
-web: any controllers.
-models: any models/POJOS
-search-engine: Any files related to the search engine.
+Head to the `p2-RESTon-angular` directory and fun the command "npm i" to install all of the required packages.
+After all necessary packages have been installed, run the command "ng serve -o" to see the front-end portion of the application.
 
-Note: You will need to populate the paths to the different text files in the .java file
+Backend Installation:
 
-
-utilities: any utility classes
-config: configuration for any beans
+Although there are several ways to deploy the back-end portion of this application, the currently deployed version of the application leverages docker/jenkins.
+If/when you deploy the back-end, ensure that the front-end API calls (found within the `/services` folder of the Angular application) are pointing to your deployed URL.
 
 ## Usage
 
-Welcome to Expens.ly!
+Welcome to Shiftly!
 
 ![home](https://i.ibb.co/mywKjHh/exspensly.png)
 
 To start, register a new user either at the bottom of the landing page (Call to Action) or by clicking "Login" then "Create a new account".
 
-![register](https://i.ibb.co/nggYQjH/register.png)
+![SetAvailability](https://i.ibb.co/HFfsqss/availability.png)
 
 After registering we can proceed to logging in.
 
-![login](https://i.ibb.co/vB72PXJ/login.png)
+![Bulletin](https://i.ibb.co/vY7cpTC/bulletin-board.png)
 
 Upon logging in, users will be able to see historical reimburstment requests, sort requests, and/or create a new request.
 
-![create-ticket](https://i.ibb.co/jZ4GwMk/client.png)
+![Daily](https://i.ibb.co/JvPjKn2/daily-schedule.png)
 
 Now that a ticket has been submitted, a Financial Manager will need to either approve/reject it. In the mean time, you'll notice that the reimburstment request now shows at the bottom. If reimburstment request history becomes too hectic, the you can always sort reimburstments to quickly find requests.
 
-![sort-ticket](https://i.ibb.co/Qb5t8sH/sort.png)
+![DMs](https://i.ibb.co/1sdF4ZY/DMs.png)
 
 You can log in as a financial manager by using the following credentials:
 Email: m@m.com
@@ -95,7 +84,7 @@ Managers, just like normal users, can create new requests, see historical reques
 
 However, managers can also approve/reject pending requests and search for all requests by a specific user by their email.
 
-![manager-view](https://i.ibb.co/3FvxLdc/manager.png)
+![Weekly](https://i.ibb.co/JctBSJS/week-schedule.png)
 
 ## License
 
