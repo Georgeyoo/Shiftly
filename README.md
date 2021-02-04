@@ -4,7 +4,7 @@
 
 A Web Application built using Java Servelets, Apache Tomcat, and UIKit which allows for the handling of expense reimbursements.
 
-Deployed: ![http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/](http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/)
+Deployed: http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/
 
 ## Technologies Used
 
